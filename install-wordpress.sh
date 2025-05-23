@@ -32,4 +32,4 @@ sudo sed -i "s/localhost/localhost/" wp-config.php
 echo "Restarting Apache..."
 sudo systemctl restart apache2
 
-echo "WordPress is installed, configured, and ready to go!"
+echo "==>WordPress is installed, configured, and ready to go!"
