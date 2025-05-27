@@ -27,7 +27,7 @@ sudo mv wp-config-sample.php wp-config.php
 
 sudo sed -i "s/database_name_here/wordpress/" wp-config.php
 sudo sed -i "s/username_here/wpuser/" wp-config.php
-sudo sed -i "s/password_here/StrongP@ssw0rd!/" wp-config.php
+sudo sed -i "s/password_here/StrongP@rg0rd!/" wp-config.php
 sudo sed -i "s/localhost/localhost/" wp-config.php
 
 echo "Restarting Apache..."
