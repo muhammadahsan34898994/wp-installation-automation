@@ -178,7 +178,7 @@ sudo chown -R www-data:www-data /var/www/html/
 sudo chmod -R 755 /var/www/html/
 ```
 
-Purpose: Sets correct ownership and permissions for WordPress.
+Purpose: sets correct ownership and permissions for WordPress.
 
 ![Set Permissions](docs/images/23.png)
 
@@ -198,7 +198,7 @@ sudo mv wp-config-sample.php wp-config.php
 sudo nano wp-config.php
 ```
 
-**Database Configuration:**
+Purpose: Inside the file, update the following:
 ```php
 define( 'DB_NAME', 'wordpress' );
 define( 'DB_USER', 'wpuser' );
@@ -218,16 +218,15 @@ Purpose: Reloads Apache to apply all new configurations.
 ![Restart Apache](docs/images/26.png)
 
 #### Verify Installation
-Check the http://<ipaddressofEC2>
+Check the http:<ipaddressofEC2>
 
 ![Verify Installation](docs/images/27.png)
 
-### 4. Domain Name and SSL Certificate
+### 4. Domain name and SSL certificate
 
 #### Configure Free Dynamic Domain (No-IP)
-- **Domain:** muhammad34898994.zapto.org
-- **Service:** No-IP dynamic DNS
-- **Mapping:** Domain → EC2 Public IP
+Registered domain: muhammad34898994.zapto.org
+Mapped domain to the EC2 public IP using No-IP dynamic DNS dashboard
 
 ![No-IP Configuration](docs/images/28.png)
 
@@ -274,7 +273,7 @@ Certbot asks if you want to share your email with the EFF (a Let's Encrypt partn
 Choice Made: Y
 While optional, this helps support the open-source community behind the tool.
 
-**Final Output: Certificate Issued and HTTPS Enabled**
+#### Final Output: Certificate Issued and HTTPS Enabled
 
 ![SSL Success](docs/images/33.png)
 
@@ -414,6 +413,4 @@ This project is open source and available under the [MIT License](LICENSE).
 **GitHub Profile:** [@muhammadahsan34898994](https://github.com/muhammadahsan34898994)  
 **This Project:** [wp-installation-automation](https://github.com/muhammadahsan34898994/wp-installation-automation)
 
----
 
-⭐ **If this project helped you, please give it a star!**
