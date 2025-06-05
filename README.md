@@ -5,7 +5,6 @@
 **Name:** Muhammad Ahsan  
 **Student ID:** 34898994  
 **GitHub Repository:** wp-installation-automation  
-**Project Repository:** muhammadahsan34898994/wp-installation-automation
 
 **🚀 Live Demo**
 
