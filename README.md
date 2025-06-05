@@ -43,18 +43,18 @@ For this project, my personal GitHub account was used under the username **muham
 
 **GitHub Repository URL:** [https://github.com/muhammadahsan34898994/wp-installation-automation](https://github.com/muhammadahsan34898994/wp-installation-automation)
 
-![GitHub Repository](docs/images/github-repo.png)
+![GitHub Repository](docs/images/1.png)
 
 ### Repository Contents
 - **Script File:** `install-wordpress.sh` - Automates downloading, configuring, and setting up WordPress
 - **Open Access:** Public repo URL for review, reuse, and collaboration
 
-![Repository Contents](docs/images/repo-contents.png)
+![Repository Contents](docs/images/2.png)
 
 ### Commit History
 The GitHub commit history documents the evolution of the script and provides full transparency into how the repository was developed. Each commit reflects a change or improvement made to the project, including bug fixes, enhancements, and refinements to automation. This history demonstrates active project development, attention to detail, and iterative improvement — all key practices in software development and DevOps workflows.
 
-![Commit History](docs/images/commit-history.png)
+![Commit History](docs/images/3.png)
 
 ## 🛠️ Quick Start (One-Line Installation)
 
@@ -88,7 +88,7 @@ wp-installation-automation/
 - **Security Group:** Allow ports 80 (HTTP), 443 (HTTPS), and 22 (SSH)
 - **Elastic IP:** Allocated and attached for static public IP
 
-![EC2 Instance Configuration](docs/images/ec2-setup.png)
+![EC2 Instance Configuration](docs/images/4.png)
 
 ### 2. Server Preparation
 
@@ -187,7 +187,7 @@ sudo systemctl restart apache2
 - **Service:** No-IP dynamic DNS
 - **Mapping:** Domain → EC2 Public IP
 
-![No-IP Configuration](docs/images/noip-setup.png)
+![No-IP Configuration](docs/images/5.png)
 
 #### Install Certbot (Let's Encrypt)
 ```bash
@@ -205,7 +205,7 @@ sudo certbot --apache -d muhammad34898994.zapto.org
 3. **Email Sharing:** Consented
 4. **Result:** HTTPS enabled successfully
 
-![SSL Certificate Installation](docs/images/ssl-setup.png)
+![SSL Certificate Installation](docs/images/6.png)
 
 ## 📜 Automation Script Explanation
 
