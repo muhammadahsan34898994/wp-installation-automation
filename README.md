@@ -1,5 +1,10 @@
 # WordPress Deployment on AWS EC2 - Complete Guide
 
+**👨‍💻 Author Information**
+**Name:** Muhammad Ahsan **Student ID:** 34898994 **GitHub Repository:** **wp-installation-automation** **Project Repository:** muhammadahsan34898994/wp-installation-automation
+**🚀 Live Demo**
+Experience the fully deployed WordPress website with SSL security and custom domain integration: **🌐 Live Website:** https://muhammad34898994.zapto.org
+
 ## I. Project Overview
 
 This project demonstrates the end-to-end deployment of a fully functional, secure, and publicly accessible WordPress website hosted on AWS EC2. It is designed to simulate a real-world cloud infrastructure setup for small businesses or personal portfolios using cost-effective and scalable technologies.
