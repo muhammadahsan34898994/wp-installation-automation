@@ -43,7 +43,7 @@ For this project, my personal GitHub account was used under the username **muham
 
 **GitHub Repository URL:** [https://github.com/muhammadahsan34898994/wp-installation-automation](https://github.com/muhammadahsan34898994/wp-installation-automation)
 
-!(docs/images/1.png)
+![](docs/images/1.png)
 
 ### Repository Contents
 - **Script File:** `install-wordpress.sh` - Automates downloading, configuring, and setting up WordPress
