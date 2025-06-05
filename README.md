@@ -1,7 +1,16 @@
 # WordPress on AWS EC2 - Automated Deployment
 
+## 👨‍💻 Author Information
+**Name:** Muhammad Ahsan  
+**Student ID:** 34898994  
+**GitHub Repository:** **wp-installation-automation**  
+**Project Repository:** [muhammadahsan34898994/wp-installation-automation](https://github.com/muhammadahsan34898994/wp-installation-automation)
+
 ## 🚀 Live Demo
-**Website:** [https://muhammad34898994.zapto.org](https://muhammad34898994.zapto.org)
+Experience the fully deployed WordPress website with SSL security and custom domain integration:  
+**🌐 Live Website:** [https://muhammad34898994.zapto.org](https://muhammad34898994.zapto.org)
+
+*This live demonstration showcases a complete WordPress deployment on AWS EC2 with automated SSL certificate installation and dynamic DNS configuration.*
 
 ## 📋 Project Overview
 
@@ -301,11 +310,10 @@ WordPress is installed, configured, and ready to go!
 
 This project is open source and available under the [MIT License](LICENSE).
 
-## 👨‍💻 Author
+## 🤝 Connect & Support
 
-**Muhammad Ahsan**
-- GitHub: [@muhammadahsan34898994](https://github.com/muhammadahsan34898994)
-- Project: [wp-installation-automation](https://github.com/muhammadahsan34898994/wp-installation-automation)
+**GitHub Profile:** [@muhammadahsan34898994](https://github.com/muhammadahsan34898994)  
+**This Project:** [wp-installation-automation](https://github.com/muhammadahsan34898994/wp-installation-automation)
 
 ---
 
