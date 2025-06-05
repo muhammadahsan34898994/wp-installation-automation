@@ -83,12 +83,21 @@ wp-installation-automation/
 
 **Configuration:**
 - **AMI:** Ubuntu Server 22.04 LTS (free tier eligible)
+
+![AMI Selection](docs/images/5.png)
+
 - **Instance Type:** t2.micro
+
+![Instance Type](docs/images/6.png)
+
 - **Storage:** 20 GB EBS volume
 - **Security Group:** Allow ports 80 (HTTP), 443 (HTTPS), and 22 (SSH)
+
+![Security Group](docs/images/7.png)
+
 - **Elastic IP:** Allocated and attached for static public IP
 
-![EC2 Instance Configuration](docs/images/4.png)
+![EC2 Instance Configuration](docs/images/8.png)
 
 ### 2. Server Preparation
 
@@ -141,6 +150,8 @@ EXIT;
 
 ### 3. WordPress Configuration
 
+This phase covers downloading, configuring, and automating the WordPress deployment.
+
 #### Download and Extract WordPress
 ```bash
 cd /tmp
@@ -148,10 +159,18 @@ curl -O https://wordpress.org/latest.tar.gz
 tar xzvf latest.tar.gz
 ```
 
+Purpose: Downloads the latest WordPress archive and extracts it for setup
+
+![Download WordPress](docs/images/21.png)
+
 #### Copy WordPress Files to Web Root
 ```bash
 sudo cp -a wordpress/. /var/www/html/
 ```
+
+Purpose: Moves all WordPress core files to the Apache web root.
+
+![Copy WordPress Files](docs/images/22.png)
 
 #### Set Permissions
 ```bash
@@ -159,10 +178,22 @@ sudo chown -R www-data:www-data /var/www/html/
 sudo chmod -R 755 /var/www/html/
 ```
 
+Purpose: Sets correct ownership and permissions for WordPress.
+
+![Set Permissions](docs/images/23.png)
+
+#### Clean Up
+```bash
+sudo rm -f /var/www/html/index.html
+```
+
+Purpose: Removes Apache's default page
+
+![Clean Up](docs/images/24.png)
+
 #### Configure WordPress
 ```bash
 cd /var/www/html/
-sudo rm -f index.html
 sudo mv wp-config-sample.php wp-config.php
 sudo nano wp-config.php
 ```
@@ -171,14 +202,25 @@ sudo nano wp-config.php
 ```php
 define( 'DB_NAME', 'wordpress' );
 define( 'DB_USER', 'wpuser' );
-define( 'DB_PASSWORD', 'StrongP@ssw0rd!' );
+define( 'DB_PASSWORD', 'pass@10Dnj' );
 define( 'DB_HOST', 'localhost' );
 ```
+
+![Configure WordPress](docs/images/25.png)
 
 #### Restart Apache
 ```bash
 sudo systemctl restart apache2
 ```
+
+Purpose: Reloads Apache to apply all new configurations.
+
+![Restart Apache](docs/images/26.png)
+
+#### Verify Installation
+Check the http://<ipaddressofEC2>
+
+![Verify Installation](docs/images/27.png)
 
 ### 4. Domain Name and SSL Certificate
 
@@ -187,25 +229,63 @@ sudo systemctl restart apache2
 - **Service:** No-IP dynamic DNS
 - **Mapping:** Domain → EC2 Public IP
 
-![No-IP Configuration](docs/images/5.png)
+![No-IP Configuration](docs/images/28.png)
 
 #### Install Certbot (Let's Encrypt)
 ```bash
 sudo apt install certbot python3-certbot-apache -y
 ```
+Purpose: Installs Certbot, a tool for issuing free SSL certificates via Let's Encrypt.
+
+![Install Certbot](docs/images/29.png)
 
 #### Generate and Install SSL Certificate
+To secure the deployed WordPress website with HTTPS, Let's Encrypt SSL was configured using the following command:
 ```bash
 sudo certbot --apache -d muhammad34898994.zapto.org
 ```
 
-**SSL Setup Process:**
-1. **Email Address:** mydomaine.ges@gmail.com
-2. **Terms of Service:** Accepted
-3. **Email Sharing:** Consented
-4. **Result:** HTTPS enabled successfully
+This command triggers Certbot to automatically configure SSL for the specified domain and update Apache's configuration.
 
-![SSL Certificate Installation](docs/images/6.png)
+**Step 1: Provide Email Address**
+
+![Provide Email](docs/images/30.png)
+
+Certbot prompts for an email address to:
+- Send expiration/renewal reminders.
+- Provide urgent security notices.
+
+Input Used: mydomaine.ges@gmail.com
+This ensures you're notified before the SSL certificate expires (Let's Encrypt certificates are valid for 90 days).
+
+**Step 2: Agree to Terms of Service**
+
+![Agree to Terms](docs/images/31.png)
+
+Certbot displays its Terms of Service. You must agree to continue.
+Choice Made: Y
+Accepting registers you with the ACME server and enables Certbot to issue certificates.
+
+**Step 3: Email Sharing Consent (Optional)**
+
+![Email Sharing](docs/images/32.png)
+
+Certbot asks if you want to share your email with the EFF (a Let's Encrypt partner) to receive digital freedom news.
+Choice Made: Y
+While optional, this helps support the open-source community behind the tool.
+
+**Final Output: Certificate Issued and HTTPS Enabled**
+
+![SSL Success](docs/images/33.png)
+
+Certbot then:
+- Generates an SSL certificate.
+- Installs it under:
+  - `/etc/letsencrypt/live/muhammad34898994.zapto.org/fullchain.pem` (certificate)
+  - `/etc/letsencrypt/live/muhammad34898994.zapto.org/privkey.pem` (private key)
+- Automatically updates Apache to serve HTTPS.
+
+**Final Message:** Congratulations! You have successfully enabled HTTPS on https://muhammad34898994.zapto.org
 
 ## 📜 Automation Script Explanation
 
