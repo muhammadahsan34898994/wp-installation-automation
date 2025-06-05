@@ -37,6 +37,25 @@ The implementation spans infrastructure provisioning, server configuration, cont
 - Implement SSL/TLS certificates for HTTPS
 - Gain foundational DevOps automation skills
 
+## 💻 GitHub View
+
+For this project, my personal GitHub account was used under the username **muhammadahsan34898994**. Within this account, a dedicated repository was created named **wp-installation-automation**. The goal of this repository is to host all related assets.
+
+**GitHub Repository URL:** [https://github.com/muhammadahsan34898994/wp-installation-automation](https://github.com/muhammadahsan34898994/wp-installation-automation)
+
+![GitHub Repository](docs/images/github-repo.png)
+
+### Repository Contents
+- **Script File:** `install-wordpress.sh` - Automates downloading, configuring, and setting up WordPress
+- **Open Access:** Public repo URL for review, reuse, and collaboration
+
+![Repository Contents](docs/images/repo-contents.png)
+
+### Commit History
+The GitHub commit history documents the evolution of the script and provides full transparency into how the repository was developed. Each commit reflects a change or improvement made to the project, including bug fixes, enhancements, and refinements to automation. This history demonstrates active project development, attention to detail, and iterative improvement — all key practices in software development and DevOps workflows.
+
+![Commit History](docs/images/commit-history.png)
+
 ## 🛠️ Quick Start (One-Line Installation)
 
 ```bash
