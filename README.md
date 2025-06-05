@@ -43,7 +43,7 @@ For this project, my personal GitHub account was used under the username **muham
 
 **GitHub Repository URL:** [https://github.com/muhammadahsan34898994/wp-installation-automation](https://github.com/muhammadahsan34898994/wp-installation-automation)
 
-![](docs/images/1.png)
+![GitHub Repository](docs/images/1.png)
 
 ### Repository Contents
 - **Script File:** `install-wordpress.sh` - Automates downloading, configuring, and setting up WordPress
@@ -413,4 +413,6 @@ This project is open source and available under the [MIT License](LICENSE).
 **GitHub Profile:** [@muhammadahsan34898994](https://github.com/muhammadahsan34898994)  
 **This Project:** [wp-installation-automation](https://github.com/muhammadahsan34898994/wp-installation-automation)
 
+---
 
+⭐ **If this project helped you, please give it a star!**
