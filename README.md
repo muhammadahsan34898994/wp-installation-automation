@@ -269,7 +269,7 @@ Purpose: sets correct ownership and permissions for WordPress.
 #### Clean Up
 
 ```bash
-sudo rm -f /var/www/html/index.html
+sudo rm -rf /var/www/html/index.html
 ```
 
 Purpose: Removes Apache's default page
