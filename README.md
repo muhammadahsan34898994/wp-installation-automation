@@ -5,7 +5,7 @@
 **Name:** Muhammad Ahsan  
 **Student ID:** 34898994  
 **GitHub Repository:** wp-installation-automation  
-**ICT171 Project Video Explainer link** https://drive.google.com/file/d/1Jhz08MIhtupi3rE8O8z2sfE0__0u4VQr/view?usp=sharing
+**ICT171 Project Video Explainer link** [Video]https://drive.google.com/file/d/1Jhz08MIhtupi3rE8O8z2sfE0__0u4VQr/view?usp=sharing
 
 **IP address** 3.218.234.164
 **🚀 Live Demo**
